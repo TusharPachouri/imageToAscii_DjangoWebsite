@@ -1,2 +1,4 @@
 Django==3.2.*  # Django framework
 Pillow==8.4.*  # Python Imaging Library (PIL) for image processing
+uwsgi==2.0.20
+gunicorn==20.1.0

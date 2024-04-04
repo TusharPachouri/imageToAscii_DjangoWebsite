@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-24y-$m5*e9jgxv(blap3662%d*-xu+$i)0m4@@j_u-w-pt%wci
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://imagetoascii-djangowebsite-2.onrender.com/']
 
 
 # Application definition
