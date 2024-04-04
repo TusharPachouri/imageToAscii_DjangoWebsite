@@ -1,22 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>Upload Image</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" >
-  </head>
-  <body>
+</head>
+<body>
     <h2>Upload Image</h2>
     <form method="post" enctype="multipart/form-data">
-      {% csrf_token %} {{ form }}
-      <button type="submit">Convert</button>
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Convert</button>
     </form>
-
     {% if ascii_text %}
     <h3>ASCII Art:</h3>
     <pre>{{ ascii_text }}</pre>
-    <a href="#" download="output.txt">Download ASCII Art</a>
+    <a href="?download" download="output.txt">Download ASCII Art</a>
     {% endif %}
-  </body>
+</body>
 </html>
