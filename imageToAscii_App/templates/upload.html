@@ -11,7 +11,7 @@
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form }}
-        <button type="submit">Convert</button>
+        <button type="submit">Download ASCII Art</button>
     </form>
     {% if ascii_text %}
     <h3>ASCII Art:</h3>
