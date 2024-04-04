@@ -60,4 +60,4 @@ This Django web application converts uploaded images into ASCII art. It provides
 
 ## Output :-
 
-![Screenshot 2](/imageToAscii/screenshots/screenshot2.png)
+![Screenshot 2](/screenshots/screenshot2.png)
