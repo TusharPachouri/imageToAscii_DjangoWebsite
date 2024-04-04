@@ -1,12 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .forms import ImageUploadForm
+from .forms import ImageUploadForm  # Assuming you have created a form for image upload
 from PIL import Image
 
 def ascii_convert(image_file):
     scale = 3  # Default scale
     img = Image.open(image_file)
-    img = img.convert('RGB')  # Convert image to RGB mode
     w, h = img.size
     img.resize((w // scale, h // scale)).save("resized.jpg")
     img = Image.open("resized.jpg")
@@ -35,7 +34,6 @@ def ascii_convert(image_file):
                 grid[y][x] = "'"
             else:
                 grid[y][x] = " "
-    
     with open("output.txt", "w") as art:
         for row in grid:
             art.write("".join(row) + "\n")
